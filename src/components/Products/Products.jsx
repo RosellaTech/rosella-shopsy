@@ -1,8 +1,9 @@
 import React from "react";
-import Img1 from "../../assets/women/women.png";
-import Img2 from "../../assets/women/women2.jpg";
-import Img3 from "../../assets/women/women3.jpg";
-import Img4 from "../../assets/women/women4.jpg";
+import Img1 from "../../assets/hero/wear1.jpg";
+import Img2 from "../../assets/hero/causal4.jpg";
+import Img3 from "../../assets/hero/wear3.jpg";
+import Img4 from "../../assets/hero/casual1.jpg";
+import Img5 from "../../assets/hero/causaul2.jpg";
 import { FaStar } from "react-icons/fa6";
 
 const ProductsData = [
@@ -40,7 +41,7 @@ const ProductsData = [
   },
   {
     id: 5,
-    img: Img2,
+    img: Img5,
     title: "Fashin T-Shirt",
     rating: 4.5,
     color: "Pink",

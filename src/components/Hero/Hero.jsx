@@ -1,6 +1,6 @@
 import React from "react";
-import Image1 from "../../assets/hero/women.png";
-import Image2 from "../../assets/hero/shopping.png";
+import Image1 from "../../assets/hero/man1.png";
+import Image2 from "../../assets/hero/lady2.png";
 import Image3 from "../../assets/hero/sale.png";
 import Slider from "react-slick";
 
@@ -10,14 +10,14 @@ const ImageList = [
     img: Image1,
     title: "Upto 50% off on all Men's Wear",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Explore a wide range of trendy and highly fashionable clothing for men at the best prices online. Order your men's shirts, jeans, hoodies and more.",
   },
   {
     id: 2,
     img: Image2,
     title: "30% off on all Women's Wear",
     description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Shop the UK's largest women's clothing sale. Get up to 80% off cheap and discounted women's fashion - find the best deals on your favourite designer brands..",
   },
   {
     id: 3,
@@ -49,8 +49,8 @@ const Hero = ({ handleOrderPopup }) => {
       {/* hero section */}
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
-          {ImageList.map((data) => (
-            <div>
+          {ImageList.map((data, index) => (
+            <div  key={index}>
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 {/* text content section */}
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">

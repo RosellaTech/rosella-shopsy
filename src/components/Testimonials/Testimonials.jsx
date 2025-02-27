@@ -1,12 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
+import rose from "../../assets/hero/minepics.jpg";
 
 const TestimonialData = [
   {
     id: 1,
-    name: "Victor",
+    name: "Rosella",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    img: rose,
   },
   {
     id: 2,
@@ -87,8 +88,8 @@ const Testimonials = () => {
         {/* Testimonial cards */}
         <div data-aos="zoom-in">
           <Slider {...settings}>
-            {TestimonialData.map((data) => (
-              <div className="my-6">
+            {TestimonialData.map((data, index) => (
+              <div className="my-6" key={index}>
                 <div
                   key={data.id}
                   className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative"
